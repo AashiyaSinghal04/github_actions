@@ -1,0 +1,14 @@
+name : hello workflow
+
+on:
+push:
+    branches : [main]
+  
+jobs:
+    greet:
+         steps:
+             - name : say hello to Aashiya
+               run : echo "hello $user"
+
+               - name : say hi to india
+                 run : echo "india"
