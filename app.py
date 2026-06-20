@@ -1,4 +1,3 @@
-#this code is from flask_app
 from flask import Flask, render_template
 app = Flask(__name__)
 
