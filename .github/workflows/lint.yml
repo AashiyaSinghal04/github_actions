@@ -1,0 +1,18 @@
+# the linter will check if syntax is correct or not
+name : Auto linter
+
+on: 
+  push:
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout/clone the code
+        uses: actions/checkout@v7
+
+      - name : Install linter
+        run : pip install ruff
+        
+      
